@@ -36,6 +36,6 @@
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
-
+  $contact->recaptcha_secret_key = '6Lenh4keAAAAABzCk98KZPnD1ntXQ6Et0fNYZIo8';
   echo $contact->send();
 ?>
